@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<style type="text/css">
+		h1 {text-align: center;}
+		fieldset#principal {border: 5px solid purple; padding: 15px; border-radius: 15px;}
+		fieldset {float: left; padding: 15px;}
+		label {text-align: right;}
+		span {color: red;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Formulário de cadastro</h1>
+	</div>
+	<div class="col">
+		<form>
+			<fieldset id="principal">
+				<fieldset class="col-sm-6">
+					<div class="form-group row">
+						<label for="insereEmail" class="col-sm-3 col-form-label">E-mail <span>*</span></label>
+						<div class="col-sm-9 input-group">
+							<input type="email" class="form-control" id="insereEmail"></input>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="repeteEmail" class="col-sm-3 col-form-label">Repetir e-mail <span>*</span></label>
+						<div class="col-sm-9 input-group">
+							<input type="email" class="form-control" id="repeteEmail"></input>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset class="col-sm-6">
+					<div class="form-group row">
+						<label for="criaSenha" class="col-sm-3 col-form-label">Crie uma senha <span>*</span></label>
+						<div class="col-sm-9">
+							<input type="password" class="form-control" id="criaSenha"></input>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="repeteSenha" class="col-sm-3 col-form-label">Repetir senha <span>*</span></label>
+						<div class="col-sm-9">
+							<input type="password" class="form-control" id="repeteSenha"></input>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset class="col-sm-6">
+					<legend>Dados cadastrais</legend><br>
+					<div class="form-group row">
+						<div class="col-sm-4"></div>
+						<div class="form-check form-check-inline">
+							<input type="radio" class="form-check-input" name="radioBtn" id="inlineRadio" value="pessoaFisica" checked>
+							<label class="form-check-label" for="inlineRadio">Pessoa Física</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input type="radio" class="form-check-input" name="radioBtn" id="inlineRadio" value="pessoaJuridica">
+							<label class="form-check-label" for="inlineRadio">Pessoa Jurídica</label>
+						</div>
+						
+					</div>
+					<div class="form-group row">
+						<label for="insereNome" class="col-sm-3 col-form-label">Nome <span>*</span></label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="insereNome">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="insereSobrenome" class="col-sm-3 col-form-label">Sobrenome <span>*</span></label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="insereSobrenome">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="escolheSexo" class="col-sm-3 col-form-label">Sexo <span>*</span></label>
+						<div class="col-sm-5">
+							<select id="escolheSexo" class="form-control">
+								<option selected>Selecione</option>
+								<option>Feminino</option>
+								<option>Masculino</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="insereCPF" class="col-sm-3 col-form-label">CPF <span>*</span></label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="insereCPF">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="insereTelefone" class="col-sm-3 col-form-label">Telefone <span>*</span></label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="insereTelefone">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="insereCelular" class="col-sm-3 col-form-label">Celular <span>*</span></label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="insereCelular">
+						</div>
+					</div>
+
+					
+					<div class="form-group row">
+						<label for="" class="col-sm-3 col-form-label">Nascimento <span>*</span></label>
+
+					</div>
+
+
+					<div class="form-group row">
+						<div class="col-sm-3"></div>
+						<div class="col-sm-9">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="escolheNews">
+								<label class="form-check-label" for="escolheNews">Receber ofertas e novidades por e-mail</label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset class="col-sm-6">
+					<legend>Endereço de entrega</legend><br>
+					<div class="form-group row">
+						<label for="insereCEP" class="col-sm-3 col-form-label">CEP</label>
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="insereCEP"></input>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="insereRua" class="col-sm-3 col-form-label">Rua</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="insereRua">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="insereNum" class="col-sm-3 col-form-label">Número</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="insereNum">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-3"></div>
+						<div class="col-sm-9">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="semNumero">
+								<label class="form-check-label" for="semNumero">Sem número</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="insereCompl" class="col-sm-3 col-form-label">Complemento</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="insereCompl">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="insereRef" class="col-sm-3 col-form-label">Referência</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="insereRef">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="insereBairro" class="col-sm-3 col-form-label">Bairro</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="insereBairro">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="insereCidade" class="col-sm-3 col-form-label">Cidade</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="insereCidade">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="insereEstado" class="col-sm-3 col-form-label">Estado</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" id="insereEstado">
+						</div>
+					</div>
+				</fieldset>
+				<div class="form-group col-sm-3">
+					<div class="col-sm-3">
+						<button class="btn btn-success btn-lg">Cadastrar</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
